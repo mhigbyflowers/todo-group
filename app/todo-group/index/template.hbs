@@ -1,6 +1,33 @@
 
 
+<div class="top-container">
+  <div class="top-container__inner">
+    <div class="hamburger">E</div>
+    <h2 class="top-title">Todos</h2>
+    <nav class="top-nav">
+      <nav class="top-nav__item active-page">todo 1</nav>
+      <nav class="top-nav__item">todo 2</nav>
+      <nav class="top-nav__item">todo 3</nav>
+      <nav class="top-nav__item new">New Todo!</nav>
+    </nav>
+  </div>
+</div>
+
+
+
+
+<div class="middle-container">
+  <div class="middle-container__inner">
+<h3 class="group-title">Name of todo group</h3>
+<div class="card">
 {{#each model as |value|}}
 
+<div class="card__item">
+<input class="card__item-check"type="checkbox">
 <p>{{value.title}}</p>
+</div>
+
 {{/each}}
+</div>
+</div>
+</div>
