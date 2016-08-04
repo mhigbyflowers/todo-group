@@ -39,6 +39,12 @@ background: #00bcd0;
     text-align: center;
     padding:1rem;
     flex-grow: 1;
+    border-bottom: 0.3rem rgba(0,0,0,0) solid;
+
+    &.active {
+      border-bottom-color: yellow;
+
+    }
   }
 
 }
@@ -46,11 +52,8 @@ background: #00bcd0;
 }
 .new{
   background: #069dad;
+}
 
-}
-.active-page{
-  border-bottom: .3rem yellow solid;
-}
 
 .middle-container{
 
@@ -65,7 +68,7 @@ background: #00bcd0;
   padding:1rem;
    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-.card__item{
+.collection__item{
   display: flex;
   align-items: center;
 

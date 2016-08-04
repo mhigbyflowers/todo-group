@@ -63,7 +63,7 @@ test('user can navigate to the edit form from /todo-groups', function(assert) {
     assert.equal(currentURL(), '/todo-groups/3/edit',
       'Clicking on the third element with the class "edit-btn" should redirect to the URL "/todo-groups/3/edit"');
   });
-})
+});
 
 test('user can delete todo-groups when visiting /todo-groups', function(assert) {
   server.createList('todo-group', 3);

@@ -1,1 +1,7 @@
-<h1>this is where i make a new thing</h1>
+    <h3 class="page-title">New Category</h3>
+
+{{#simple-form onsubmit=(action "saveTodo") as |formValues|}}
+    {{input type="text" value=formValues.title class="title-input"}}
+
+    <button class="submit">submit</button>
+{{/simple-form}}

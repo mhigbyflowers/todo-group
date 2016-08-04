@@ -1,37 +1,21 @@
-
-
-<div class="top-container">
-  <div class="top-container__inner">
-    <div class="hamburger">E</div>
-    <h2 class="top-title">Todos</h2>
-    <nav class="top-nav">
-      <nav class="top-nav__item active-page">todo 1</nav>
-      <nav class="top-nav__item">todo 2</nav>
-      <nav class="top-nav__item">todo 3</nav>
-      {{#link-to 'todo-group.new' class="top-nav__item new-btn new"}}
-      New Todo!
-      {{/link-to}}
-
-
-    </nav>
-  </div>
-</div>
-
-
-
-
 <div class="middle-container">
   <div class="middle-container__inner">
-<h3 class="page-title">Categories</h3>
-<div class="collection">
+    <h3 class="page-title">Categories</h3>
+    <div class="collection">
 
-  {{#each model as |value|}}
-<div class="collection__item">
-<input class="card__item-check"type="checkbox">
-<p class= "todo-group__title">{{value.title}}</p>
-</div>
+      {{#each model as |value|}}
 
-{{/each}}
-</div>
-</div>
+        <div class="collection__item">
+          {{#link-to "todo-group.edit" value.id class="edit-btn" }}
+            edit
+          {{/link-to}}
+          <p class="todo-group__title">{{value.title}}</p>
+
+          <button class="delete-btn" data-id= "{{value.id}}" {{ action "destroy" value}}>delete</button>
+
+        </div>
+
+      {{/each}}
+    </div>
+  </div>
 </div>
