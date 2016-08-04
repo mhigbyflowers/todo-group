@@ -8,7 +8,11 @@
       <nav class="top-nav__item active-page">todo 1</nav>
       <nav class="top-nav__item">todo 2</nav>
       <nav class="top-nav__item">todo 3</nav>
-      <nav class="top-nav__item new">New Todo!</nav>
+      {{#link-to 'todo-group.new' class="top-nav__item new-btn new"}}
+      New Todo!
+      {{/link-to}}
+
+
     </nav>
   </div>
 </div>
@@ -20,8 +24,8 @@
   <div class="middle-container__inner">
 <h3 class="page-title">Categories</h3>
 <div class="collection">
-{{#each model as |value|}}
 
+  {{#each model as |value|}}
 <div class="collection__item">
 <input class="card__item-check"type="checkbox">
 <p class= "todo-group__title">{{value.title}}</p>
