@@ -18,13 +18,13 @@
 
 <div class="middle-container">
   <div class="middle-container__inner">
-<h3 class="group-title">Name of todo group</h3>
-<div class="card">
+<h3 class="page-title">Categories</h3>
+<div class="collection">
 {{#each model as |value|}}
 
-<div class="card__item">
+<div class="collection__item">
 <input class="card__item-check"type="checkbox">
-<p>{{value.title}}</p>
+<p class= "todo-group__title">{{value.title}}</p>
 </div>
 
 {{/each}}
