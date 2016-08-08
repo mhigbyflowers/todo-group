@@ -4,7 +4,7 @@
     <h2 class="top-title">Todos</h2>
     <nav class="top-nav">
       {{#each model as |group|}}
-        {{#link-to "todo-group.edit" group class="top-nav__item"}}
+        {{#link-to "todo-group.detail" group class="top-nav__item"}}
           {{group.title}}
         {{/link-to}}
       {{/each}}
@@ -13,7 +13,11 @@
         New Todo!
       {{/link-to}}
     </nav>
+
   </div>
 </div>
-
+<div class="middle-container">
+  <div class="middle-container__inner">
 {{outlet}}
+</div>
+</div>

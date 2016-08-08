@@ -1,10 +1,10 @@
-<div class="middle-container">
-  <div class="middle-container__inner">
+
+<div class="card">
     <h3 class="page-title">Categories</h3>
+    <div class="btn">Add New Category</div>
     <div class="collection">
 
       {{#each model as |value|}}
-
         <div class="collection__item">
           {{#link-to "todo-group.edit" value.id class="edit-btn" }}
             edit
@@ -14,8 +14,7 @@
           <button class="delete-btn" data-id= "{{value.id}}" {{ action "destroy" value}}>delete</button>
 
         </div>
-
       {{/each}}
-    </div>
-  </div>
+
+</div>
 </div>

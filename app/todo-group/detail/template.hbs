@@ -1,0 +1,9 @@
+
+<h1 class="page-title">{{model.title}}</h1>
+
+
+<h4 class="collection__item">
+  {{#each model.items as |value|}}
+  <p class="todo-item__name">{{value.name}}</p>
+  {{/each}}
+</h4>

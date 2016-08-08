@@ -1,7 +1,9 @@
 import { Factory, faker } from 'ember-cli-mirage';
 
+
 export default Factory.extend({
-  title() {
-    return faker.name.jobArea(1);
-  }
+title(){
+  return faker.random.word();
+  // debugger;
+}
 });
