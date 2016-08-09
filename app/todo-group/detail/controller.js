@@ -5,14 +5,17 @@ export default Ember.Controller.extend({
     destroy(value){
       value.destroyRecord();
     },
-    editSubmit(group, formValues){
 
-      group.setProperties(formValues);
-      group.save().then(() => {
+    saveItem(value,formValues,reset){
+    const storeItem =  this.store.createRecord('todo-item', formValues);
+    storeItem.set('group',value);
+    storeItem.save();
+    reset();
+    },
+toggleCheck(item){
+  item.toggleProperty('done');
+  item.save();
 
-      // Redirect
-      this.transitionToRoute('todo-group.index');
-    });
-  }
+}
 }
 });

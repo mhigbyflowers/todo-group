@@ -19,7 +19,7 @@
   font-size: 2rem;
   margin-top: 1rem;
   border: none;
-    border-bottom: 1px #bdbdbd solid;
+  border-bottom: 1px #bdbdbd solid;
 }
 
 .todo-item{
@@ -27,8 +27,13 @@
   align-items: center;
   &__checkbox{
     margin-right: .5rem;
-    width: 1rem;
-    height: 1rem;
+  font-size: 1rem;
   }
+
+}
+.check-icon{
+  background: transparent;
+  border: none;
+  outline: none;
 
 }
