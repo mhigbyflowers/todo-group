@@ -16,6 +16,6 @@ export default function(server) {
         min: 1,
         max: 3
       });
-    }
+    },
   });
 }

@@ -3,26 +3,25 @@
 </div>
 {{log model}}
 <div class="collection">
+  {{#each model.items as |value|}}
   <div class="collection__item">
     <div class="todo-item">
-      <input type="checkbox" class="todo-item__checkbox">
-      <p class="todo-item__name"> Fake Thing</p>
+
+       <span class="todo-item__done todo-item__checkbox fa fa-check-square-o"></span>
+              <span class="todo-item__done todo-item__checkbox fa fa-square-o"></span>
+
+
+        <p class="todo-item__name"> {{value.name}}</p>
     </div>
     <button class="delete-btn btn" data-id="{{value.id}}" {{ action "destroy" value}}>{{fa-icon "trash"}}</button>
-
   </div>
-  <div class="collection__item">
-    <div class="todo-item">
-      <input type="checkbox" class="todo-item__checkbox">
-      <p class="todo-item__name"> Fake Thing</p>
-    </div>
-    <button class="delete-btn btn" data-id="{{value.id}}" {{ action "destroy" value}}>{{fa-icon "trash"}}</button>
+  {{/each}}
 
-  </div>
 
-  <div class="new-todo-form">
+
+
+  <div class="new-todo-form collection__item">
     <input name="new-todo" class="new-todo-form__input" type="text" placeholder="New Todo">
-
     <button class="btn add-btn">add</button>
   </div>
 </div>

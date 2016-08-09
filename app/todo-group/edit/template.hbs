@@ -1,7 +1,14 @@
-
 <h1 class="page-title">Editing {{model.title}}</h1>
-
 {{#simple-form startingValues=model onsubmit=(action "editSubmit" model) as |formValues|}}
-{{input type="text" class="title-input" value=model.title}}
-<button class="submit">Submit</button>
+  <div class="edit-form">
+    {{input type="text" class="title-input edit-form__input" autofocus="autofocus" value=model.title}}
+    <div class="edit-btn-group">
+      <button class="submit-btn btn">Submit</button>
+      {{#link-to 'todo-group'}}
+        <div class="back-btn btn">Back</div>
+      {{/link-to}}
+
+
+    </div>
+  </div>
 {{/simple-form}}
