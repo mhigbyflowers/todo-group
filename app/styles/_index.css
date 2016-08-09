@@ -1,0 +1,40 @@
+.card-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+
+}
+.collection{
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+&__item{
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+    border-right: 1px #bdbdbd solid;
+    border-left: 1px #bdbdbd solid;
+    border-bottom: 1px #bdbdbd solid;
+    padding: 0 1rem ;
+    &:first-child{
+        border-top: 1px #bdbdbd solid;
+    }
+}
+}
+
+.delete-btn{
+background:#d32f2f;
+}
+.edit-btn{
+margin-right: 1rem;
+background: #42a5f5;
+
+}
+.new-btn {
+  background: #66bb6a;
+}
+.button-group{
+display: flex;
+align-items: center;
+
+}

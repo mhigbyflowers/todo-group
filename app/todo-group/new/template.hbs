@@ -1,7 +1,13 @@
     <h3 class="page-title">New Category</h3>
 
 {{#simple-form onsubmit=(action "saveTodo") as |formValues|}}
-    {{input type="text" value=formValues.title class="title-input"}}
 
-    <button class="submit">submit</button>
+    {{input type="text" value=formValues.title class="new-input" placeholder="Title"}}
+<div class="new-btn-group">
+  {{#link-to 'todo-group'}}
+
+  <div class="btn back-btn">Back</div>
+  {{/link-to}}
+    <button class="submit-btn btn">Save</button>
+  </div>
 {{/simple-form}}

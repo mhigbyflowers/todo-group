@@ -1,9 +1,28 @@
+<div class="card-title">
+  <h1 class="page-title">{{model.title}}</h1>
+</div>
+{{log model}}
+<div class="collection">
+  <div class="collection__item">
+    <div class="todo-item">
+      <input type="checkbox" class="todo-item__checkbox">
+      <p class="todo-item__name"> Fake Thing</p>
+    </div>
+    <button class="delete-btn btn" data-id="{{value.id}}" {{ action "destroy" value}}>{{fa-icon "trash"}}</button>
 
-<h1 class="page-title">{{model.title}}</h1>
+  </div>
+  <div class="collection__item">
+    <div class="todo-item">
+      <input type="checkbox" class="todo-item__checkbox">
+      <p class="todo-item__name"> Fake Thing</p>
+    </div>
+    <button class="delete-btn btn" data-id="{{value.id}}" {{ action "destroy" value}}>{{fa-icon "trash"}}</button>
 
+  </div>
 
-<h4 class="collection__item">
-  {{#each model.items as |value|}}
-  <p class="todo-item__name">{{value.name}}</p>
-  {{/each}}
-</h4>
+  <div class="new-todo-form">
+    <input name="new-todo" class="new-todo-form__input" type="text" placeholder="New Todo">
+
+    <button class="btn add-btn">add</button>
+  </div>
+</div>

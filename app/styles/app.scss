@@ -1,44 +1,33 @@
 @import "top-nav";
+@import "template";
+@import "index";
+@import "new";
+.submit-btn{
+  background: #ff8f00;
+}
+.back-btn{
+  background: #979797;
+}
+.new-btn-group{
+  display: flex;
+  // justify-content: space-between;
+  margin-top: 1rem;
+}
+.new-input{
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 1rem;
+  border: none;
+    border-bottom: 1px #bdbdbd solid;
+}
 
-*{
-  box-sizing: border-box;
-}
-body{
-font-family: sans-serif;
-  margin: 0;
-}
-h1,h2,h3{
-  margin:0;
-}
-
-.new{
-  background: #069dad;
-}
-.btn{
-      padding: .5rem 1rem;
-      background: #666;
-}
-
-.middle-container{
-
-  &__inner{
-    max-width: 60rem;
-    margin: auto;
-  }
-.group-title{
-  margin-top: 3rem;
-}
-.card{
-  padding:1rem;
-   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-.collection__item{
+.todo-item{
   display: flex;
   align-items: center;
+  &__checkbox{
+    margin-right: .5rem;
+    width: 1rem;
+    height: 1rem;
+  }
 
-  &-check{
-background: red;
-  margin-right: .5rem;
-  }
 }
-  }
