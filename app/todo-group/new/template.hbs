@@ -2,12 +2,12 @@
 
 {{#simple-form onsubmit=(action "saveTodo") as |formValues|}}
 
-  {{input type="text" value=formValues.title class="new-input" placeholder="Title"}}
+  {{input type="text" value=formValues.title class="new-input title-input" placeholder="Title"}}
   <div class="new-btn-group">
     {{#link-to 'todo-group.index'}}
 
       <div class="btn back-btn">Back</div>
     {{/link-to}}
-    <button class="submit-btn btn">Save</button>
+    <button class="submit submit-btn btn">Save</button>
   </div>
 {{/simple-form}}
