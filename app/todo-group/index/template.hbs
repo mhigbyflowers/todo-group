@@ -1,0 +1,24 @@
+
+<div class="card-title">
+    <h3 class="page-title">Categories</h3>
+    {{#link-to 'todo-group.new'}}
+
+    <div class="btn new-btn">Add New Category</div>
+    {{/link-to}}
+    </div>
+    <div class="collection">
+
+    {{#each model as |value|}}
+        <div class="collection__item">
+          <p class="todo-group__title">{{value.title}}</p>
+<div class="button-group">
+          {{#link-to "todo-group.edit" value.id class="edit-btn btn" }}
+          edit
+          {{/link-to}}
+          <button class="delete-btn btn" data-id= "{{value.id}}" {{ action "destroy" value}}>{{fa-icon "trash"}}</button>
+</div>
+        </div>
+      {{/each}}
+
+
+</div>

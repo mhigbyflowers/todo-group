@@ -1,0 +1,29 @@
+<div class="top-container">
+  <div class="top-container__inner">
+<div class="brand-nav">
+{{#link-to 'todo-group'}}
+
+    <h4 class="top-title">{{fa-icon "bars"}} Todos</h4>
+    {{/link-to}}
+    </div>
+    <nav class="top-nav">
+      {{#each model as |group|}}
+        {{#link-to "todo-group.detail" group class="top-nav__item"}}
+          {{group.title}}
+        {{/link-to}}
+      {{/each}}
+
+      {{#link-to 'todo-group.new' class="top-nav__item new-btn new" }}
+        New Todo!
+      {{/link-to}}
+    </nav>
+
+  </div>
+</div>
+<div class="middle-container">
+  <div class="middle-container__inner">
+    <div class="card">
+{{outlet}}
+</div>
+</div>
+</div>

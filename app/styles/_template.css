@@ -1,0 +1,40 @@
+
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body{
+
+font-family: sans-serif;
+  margin: 0;
+}
+h1,h2,h3,h4{
+  margin:0;
+}
+
+
+.btn{
+      padding: .5rem 1rem;
+      color:white;
+      border: none;
+      font-size: 1rem;
+}
+
+.middle-container{
+
+  &__inner{
+    max-width: 60rem;
+    margin: auto;
+  }
+.group-title{
+  margin-top: 3rem;
+}
+.card{
+  margin-top: 1rem;
+  padding:1rem;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+  }

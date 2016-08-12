@@ -1,0 +1,39 @@
+@import "top-nav";
+@import "template";
+@import "index";
+@import "new";
+@import "edit";
+.submit-btn{
+  background: #ff8f00;
+}
+.back-btn{
+  background: #979797;
+}
+.new-btn-group{
+  display: flex;
+  // justify-content: space-between;
+  margin-top: 1rem;
+}
+.new-input{
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 1rem;
+  border: none;
+  border-bottom: 1px #bdbdbd solid;
+}
+
+.todo-item{
+  display: flex;
+  align-items: center;
+  &__checkbox{
+    margin-right: .5rem;
+  font-size: 1rem;
+  }
+
+}
+.check-icon{
+  background: transparent;
+  border: none;
+  outline: none;
+
+}

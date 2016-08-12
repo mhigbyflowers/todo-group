@@ -1,0 +1,17 @@
+.new-btn-group{
+  display: flex;
+  justify-content: space-between;
+}
+.new-todo-form{
+  display: flex;
+  padding: 1rem;
+  &__input{
+    border: none;
+      border-bottom: 1px #bdbdbd solid;
+    flex-grow: 1;
+    font-size: 1rem;
+  }
+}
+.add-btn{
+    background: #ff8f00;
+}
